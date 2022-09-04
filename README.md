@@ -13,6 +13,7 @@ SETUP
 6. get link [here](https://faucets.chain.link/) (We will use LINK as underlying asset)
 7. setting up `fake price feed` go to `contracts\FakePriceFeed` copy all of it and paste in [REMIX](https://remix.ethereum.org/)
 deploy it on goerli with started current price of 1x10^18 (1 Link)
+8. copy address of fake price feed and paste it in `scripts\createOption.js` line 55 (LINK/USD price feed)
 
 After done setup next we will working on Option process.
 1. deploy option contract `npx hardhat deploy --reset`
